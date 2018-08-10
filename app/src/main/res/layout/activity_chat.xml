@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvChat"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMessage"
+        android:gravity="top"
+        android:imeOptions="actionSend"
+        android:hint="@string/message_hint"
+        android:layout_alignBottom="@+id/btSend"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSend"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/send"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
